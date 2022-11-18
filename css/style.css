@@ -1,6 +1,6 @@
 .navbar {
-    padding: 2rem; /**/
-    background-color: #f1f8f9; 
+    padding: 2rem; /*en relacion al tamano del elemento raiz html*/
+    background-color: #f5f6f7; 
 }
 
 .navbar-collapse {
@@ -8,6 +8,92 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+.seccion-oscura { 
+    color: white;
+    background-color: 1b1b32;
+}
+
+.seccion-clara { 
+    color: black;
+    background-color: #f5f6f7;
+}
+
+/*Seccion Hero*/
+.hero {
+    background-color: #f5f6f7;
+    /*al usar una altura min se permite que se estire*/
+    min-height: 450px; 
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-principal img {
+    width: 200px;
+    /*height: 250px;*/
+    border-radius: 50%;
+    border: 5px solid #414141;
+}
+
+/*Seccion sobre mi*/
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenedor h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.contenedor p {
+    font-size: 1.2rem;
+    padding: 15px 4px;
+}
+
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia .row div { /*Todos los div que estan dentro de una 
+    fila y en la seccion experiencia*/
+    height: 250px;
+}
+
+/*Media Querys*/
+@media screen and (max-width: 767px) { /*Menor a 767, se oculta la barra*/
     .navbar-brand { display: none }
+}
+
+@media screen and (min-width: 700px) { /*A pertir de los 700px se aplica este estilo*/
+    .hero-inferior img {
+        max-width: 600px;
+    }
 }
