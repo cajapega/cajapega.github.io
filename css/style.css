@@ -89,30 +89,41 @@ p {
 
 .experiencia .row div { /*Todos los div que estan dentro de una 
     fila y en la seccion experiencia*/
-    height: 300px;
+    height: 450px;
 }
 /*filter: opacity(0.9) drop-shadow(0,10,0 red);*/
-
-.columna {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-}
 
 .experiencia i { /*seleccionamos todos los elementos i de la seccion experiencia*/
     font-size: 3.5rem;
     color: #7ade30;
     background-color: #0a0a23;
-    padding: 8px 19px;
+    padding: 20px 20px;
     border-radius: 50%;
 }
 
 .experiencia h2 {
     font-weight: bold;
     color: black;
-
+    padding: 30px 0 0 0;
 }
+
+.experiencia .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.badges-contenedor {
+    font-size: 25px;
+    margin: 0px 0;
+}
+
+.badge { 
+    margin: 10 5px;
+}
+
 
 /*Media Querys*/
 @media screen and (max-width: 767px) { /*Menor a 767, se oculta la barra*/
