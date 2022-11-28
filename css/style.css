@@ -132,7 +132,7 @@ p {
 /*Seccion Proyectos*/
 
 .proyectos-recientes {
-    display: flex;
+    display: none;
     flex-direction: column;
 
     padding: 40px;
