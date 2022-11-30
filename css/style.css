@@ -1,11 +1,15 @@
 .navbar {
-    padding: 2rem; /*en relacion al tamano del elemento raiz html*/
+    padding: 3rem; /*en relacion al tamano del elemento raiz html*/
     background-color: #f5f6f7; 
 }
 
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar-nav {
+    align-items: center;
 }
 
 section {
@@ -99,7 +103,7 @@ p {
 
 #experiencia i { /*seleccionamos todos los elementos i de la seccion experiencia*/
     font-size: 3.5rem;
-    color: #7ade30;
+    color: #9df35b;
     background-color: #0a0a23;
     padding: 20px 20px;
     border-radius: 50%;
@@ -118,6 +122,18 @@ p {
     align-items: center;
 }
 
+#experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+    border-radius: 4rem;
+
+    transition: all 0.2s ease-in;
+
+}
+
+#experiencia .columna:hover h2, .badge {
+    color: #f5f6f7;
+}
 
 .badges-contenedor {
     font-size: 25px;
@@ -251,10 +267,6 @@ footer {
 
 footer .logo {
     margin-top: 30px;
-}
-
-footer .logo:hover {
-    color: black;
 }
 
 footer p {
