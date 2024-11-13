@@ -1,6 +1,7 @@
 .navbar {
-    padding: 3rem; /*en relacion al tamano del elemento raiz html*/
-    background-color: #f5f6f7; 
+    padding: 3rem;
+    /*en relacion al tamano del elemento raiz html*/
+    background-color: #f5f6f7;
 }
 
 .navbar-collapse {
@@ -33,12 +34,12 @@ p {
     font-size: 1.2rem;
 }
 
-.seccion-oscura { 
+.seccion-oscura {
     color: white;
     background-color: #1b1b32;
 }
 
-.seccion-clara { 
+.seccion-clara {
     color: black;
     background-color: #f5f6f7;
 }
@@ -52,7 +53,7 @@ p {
 #hero {
     background-color: #f5f6f7;
     /*al usar una altura min se permite que se estire*/
-    min-height: 450px; 
+    min-height: 450px;
     text-align: center;
 }
 
@@ -96,12 +97,14 @@ p {
     text-align: center;
 }
 
-#experiencia .row div { /*Todos los div que estan dentro de una 
+#experiencia .row div {
+    /*Todos los div que estan dentro de una 
     fila y en la seccion experiencia*/
     height: 550px;
 }
 
-#experiencia i { /*seleccionamos todos los elementos i de la seccion experiencia*/
+#experiencia i {
+    /*seleccionamos todos los elementos i de la seccion experiencia*/
     font-size: 3.5rem;
     color: white;
     background-color: #0a0a23;
@@ -118,7 +121,7 @@ p {
 #experiencia .columna {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -131,7 +134,8 @@ p {
 
 }
 
-#experiencia .columna:hover h2, .badge {
+#experiencia .columna:hover h2,
+.badge {
     color: #f5f6f7;
 }
 
@@ -140,7 +144,7 @@ p {
     margin: 0px 0;
 }
 
-.badge { 
+.badge {
     margin: 10 5px;
 }
 
@@ -148,7 +152,7 @@ p {
 /*Seccion contacto*/
 #contacto .container {
     max-width: 1000px;
-    min-height: 150px; 
+    min-height: 150px;
 }
 
 
@@ -237,8 +241,12 @@ footer p {
 }
 
 /*Media Querys*/
-@media screen and (max-width: 767px) { /*Menor a 767, se oculta la barra*/
-    .navbar-brand { display: none }
+@media screen and (max-width: 767px) {
+
+    /*Menor a 767, se oculta la barra*/
+    .navbar-brand {
+        display: none
+    }
 
     #experiencia .columna:hover {
         color: inherit;
@@ -247,17 +255,20 @@ footer p {
         transition: none;
     }
 
-    #experiencia .columna:hover h2, .badge {
+    #experiencia .columna:hover h2,
+    .badge {
         color: inherit;
     }
-    
+
     .badges-contenedor span {
         font-size: 0.8rem;
     }
 
 }
 
-@media screen and (min-width: 700px) { /*A pertir de los 700px se aplica este estilo*/
+@media screen and (min-width: 700px) {
+
+    /*A pertir de los 700px se aplica este estilo*/
     .hero-inferior img {
         max-width: 600px;
     }
@@ -267,7 +278,7 @@ footer p {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    
+
         text-align: center;
         min-height: 120px;
     }
@@ -275,7 +286,7 @@ footer p {
     footer .logo {
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
@@ -283,12 +294,13 @@ footer p {
         font-size: 1.2rem;
         color: #615151;
     }
-    
+
     p {
         font-size: 1rem;
     }
 
-    #experiencia .columna:hover h2, .badge {
+    #experiencia .columna:hover h2,
+    .badge {
         color: inherit;
     }
 
@@ -296,7 +308,7 @@ footer p {
         height: 850px;
     }
 
-    #experiencia i { 
+    #experiencia i {
         font-size: 2.7rem;
         background-color: #0a0a23;
         padding: 15px 15px;
@@ -306,8 +318,4 @@ footer p {
     .badges-contenedor {
         font-size: 18px;
     }
-
-
-
 }
-
