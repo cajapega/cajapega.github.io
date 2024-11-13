@@ -258,6 +258,10 @@ footer p {
     transition: none;
 }
 
+.badges-contenedor span {
+    font-size: 0.7rem;
+}
+
 @media screen and (min-width: 700px) { /*A pertir de los 700px se aplica este estilo*/
     .hero-inferior img {
         max-width: 600px;
