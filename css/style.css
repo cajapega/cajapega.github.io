@@ -282,8 +282,19 @@ footer p {
         font-size: 1rem;
     }
 
+    #experiencia .columna:hover {
+        color: inherit;
+        background-color: inherit;
+        border-radius: 0;
+        transition: none;
+    }
+
+    #experiencia .columna:hover h2, .badge {
+        color: inherit;
+    }
+
     #experiencia .row div {
-        height: 650px;
+        height: 850px;
     }
 
     #experiencia i { 
