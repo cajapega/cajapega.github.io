@@ -98,12 +98,12 @@ p {
 
 #experiencia .row div { /*Todos los div que estan dentro de una 
     fila y en la seccion experiencia*/
-    height: 450px;
+    height: 550px;
 }
 
 #experiencia i { /*seleccionamos todos los elementos i de la seccion experiencia*/
     font-size: 3.5rem;
-    color: #9df35b;
+    color: white;
     background-color: #0a0a23;
     padding: 20px 20px;
     border-radius: 50%;
@@ -124,7 +124,7 @@ p {
 
 #experiencia .columna:hover {
     color: white;
-    background-color: #1b1b32;
+    background-color: #3b3b3b;
     border-radius: 4rem;
 
     transition: all 0.2s ease-in;
@@ -144,40 +144,6 @@ p {
     margin: 10 5px;
 }
 
-/*Seccion Proyectos*/
-
-.proyectos-recientes {
-    display: none;
-    flex-direction: column;
-
-    padding: 40px;
-}
-
-.proyectos-recientes h2:first-child {
-    color: black;
-    font-size: 2.5rem;
-    padding: 15px 0;
-    font-family: 'Rubik Dirt', cursive;
-}
-
-.proyectos img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
-
-}
-
-.proyectos-contenedor {
-    margin-bottom: 40px;
-}
-
-.proyectos {
-    position: relative; /*combinado con position absolute muestra los iconos*/
-}
-
 .overlay {
     transition: all 0.2s ease;
     opacity: 0;
@@ -186,31 +152,6 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.proyectos:hover img {
-    opacity: 0.2;
-}
-
-.proyectos:hover .overlay {
-    opacity: 1;
-}
-
-.overlay .iconos-contenedor {
-    display: flex;
-
-}
-
-.overlay i {
-    color: black;
-    font-size: 50px;
-    padding: 0 10px;
 }
 
 /*Seccion contacto*/
@@ -304,13 +245,10 @@ footer p {
     color: black;
 }
 
-
-
-
-
 /*Media Querys*/
 @media screen and (max-width: 767px) { /*Menor a 767, se oculta la barra*/
     .navbar-brand { display: none }
+
 }
 
 @media screen and (min-width: 700px) { /*A pertir de los 700px se aplica este estilo*/
@@ -344,9 +282,12 @@ footer p {
         font-size: 1rem;
     }
 
+    #experiencia .row div {
+        height: 650px;
+    }
+
     #experiencia i { 
         font-size: 2.7rem;
-        color: #7ade30;
         background-color: #0a0a23;
         padding: 15px 15px;
         border-radius: 50%;
