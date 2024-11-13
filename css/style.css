@@ -251,6 +251,13 @@ footer p {
 
 }
 
+#experiencia .columna:hover {
+    color: inherit;
+    background-color: inherit;
+    border-radius: 0;
+    transition: none;
+}
+
 @media screen and (min-width: 700px) { /*A pertir de los 700px se aplica este estilo*/
     .hero-inferior img {
         max-width: 600px;
@@ -282,13 +289,6 @@ footer p {
         font-size: 1rem;
     }
 
-    #experiencia .columna:hover {
-        color: inherit;
-        background-color: inherit;
-        border-radius: 0;
-        transition: none;
-    }
-
     #experiencia .columna:hover h2, .badge {
         color: inherit;
     }
@@ -308,13 +308,6 @@ footer p {
         font-size: 18px;
     }
 
-    .overlay p {
-        font-size: 16px;
-    }
-
-    .overlay i {
-        font-size: 30px;
-    }
 
 
 }
