@@ -144,15 +144,6 @@ p {
     margin: 10 5px;
 }
 
-.overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 /*Seccion contacto*/
 #contacto .container {
@@ -249,17 +240,17 @@ footer p {
 @media screen and (max-width: 767px) { /*Menor a 767, se oculta la barra*/
     .navbar-brand { display: none }
 
-}
+    #experiencia .columna:hover {
+        color: inherit;
+        background-color: inherit;
+        border-radius: 0;
+        transition: none;
+    }
+    
+    .badges-contenedor span {
+        font-size: 0.8rem;
+    }
 
-#experiencia .columna:hover {
-    color: inherit;
-    background-color: inherit;
-    border-radius: 0;
-    transition: none;
-}
-
-.badges-contenedor span {
-    font-size: 0.7rem;
 }
 
 @media screen and (min-width: 700px) { /*A pertir de los 700px se aplica este estilo*/
