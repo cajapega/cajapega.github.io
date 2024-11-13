@@ -246,6 +246,10 @@ footer p {
         border-radius: 0;
         transition: none;
     }
+
+    #experiencia .columna:hover h2, .badge {
+        color: inherit;
+    }
     
     .badges-contenedor span {
         font-size: 0.8rem;
