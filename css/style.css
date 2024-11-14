@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Rubik Dirt';
+    src: url('/font/RubikDirt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .navbar {
     padding: 3rem;
     /*en relacion al tamano del elemento raiz html*/
