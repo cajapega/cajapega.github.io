@@ -51,6 +51,7 @@
 }
 #header .socialMedia i:hover {
     color: var(--accent-blue);
+    font-size: 3.2rem;
 }
 #header .hamburger {
     color: var(--neutral-black);
@@ -60,3 +61,4 @@
 #header .hamburger:hover {
     color: var(--neutral-black-hover);
 }
+
