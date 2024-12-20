@@ -1,0 +1,54 @@
+:root {
+    --primary-blue:  #0000FF;
+    --accent-blue: #0080FF;
+    --neutral-black: #0C0C0C;
+    --neutral-black-hover: #1A1A1A;
+    --neutral-white: #FFFFFF;
+    --second-white: #f5f6f7;
+    --dark-gray: #4D4D4D;
+    --dark-gray-hover: #5A5A5A;
+}
+
+/*presentacion*/
+#sPresentation {
+    background: url('/assets/images/3.png') no-repeat center center/cover;
+    position: relative;
+    }
+#sPresentation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px) contrast(70%);
+    background: rgba(31, 78, 121, 0.1);  /*rgba(0, 0, 0, 0.4)*/
+    z-index: 0; /* Overlay semitransparente */
+}
+.presentation {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block-start: 20%;
+
+    position: relative;
+    z-index: 3;
+}
+
+.presentation p {
+    color: var(--second-white);
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-block-end: 5%;
+}
+
+.presentation p:nth-child(2) {
+    font-size: 7.5rem;
+    color: var(--neutral-white);
+}
+.presentation .btnCV {
+    font-size: 5rem;
+}
