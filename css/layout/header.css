@@ -1,5 +1,5 @@
 
-/*:: Seccion de presentacion: Header y presentacion ::*/
+/*:: Seccion de presentacion: Header::*/
 /*Header*/
 #header {
     height: 11vh;
@@ -12,7 +12,7 @@
     z-index: 30;
 }
 #header .logo {
-    font-size: 5rem;
+    font-size: 2.6rem;
     color: var(--dark-gray);
     padding-inline-start: 2vw;
     font-weight: bold;
@@ -33,10 +33,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block-start: 10%;
+    margin-block-start: 7%;
 }
 .navLinks li a {
-    font-size: 5rem;
+    font-size: 2.5rem;
     text-decoration: none;
     color: var(--neutral-black);
 }
@@ -46,23 +46,25 @@
 }
 #header .socialMedia i {
     color: var(--neutral-black);
-    font-size: 3rem;
+    font-size: 2rem;
     padding-inline: 2vw;
 }
 #header .socialMedia i:hover {
     color: var(--accent-blue);
-    font-size: 3.2rem;
+    font-size: 2.1rem;
 }
 #header .hamburger {
-    color: var(--neutral-black);
-    font-size: 6rem;
+    color: var(--primary-blue);
+    font-size: 2.5rem;
     padding-inline-end: 5vw;
 }
 #header .hamburger:hover {
-    color: var(--neutral-black-hover);
+    color: var(--accent-blue);
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+/*:: Seccion de presentacion: Header::*/
+/*Header*/
     #header {}
     #header nav {
         width: 40%;
@@ -105,4 +107,3 @@
     }
     #header .hamburger:hover {}
 }
-

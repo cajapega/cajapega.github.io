@@ -9,7 +9,8 @@
     --dark-gray-hover: #5A5A5A;
 }
 
-/*presentacion*/
+/*:: Seccion de presentacion: Presentacion::*/
+/*Presetacion*/
 #sPresentation {
     background: url('/assets/images/3.png') no-repeat center center/cover;
     position: relative;
@@ -32,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-block-start: 20%;
+    padding-block-start: 5%;
 
     position: relative;
     z-index: 3;
@@ -40,16 +41,82 @@
 
 .presentation p {
     color: var(--second-white);
-    font-size: 5.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-block-end: 5%;
 }
 
 .presentation p:nth-child(2) {
-    font-size: 7.5rem;
+    font-size: 3.5rem;
     color: var(--neutral-white);
 }
-.presentation .btnCV {
-    font-size: 5rem;
+.btnCV {
+    font-size: 1.8rem;
+}
+/*:: Seccion de presentacion: whoiam::*/
+#swhoiam {}
+
+#swhoiam .whoiam {}
+
+.heroTitle {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+}
+.heroTitle:after {
+    content:'';
+    position: absolute;
+    width: 50%; /* Ajusta el ancho de la línea */
+    height: 6px; /* Ajusta el grosor de la línea */
+    background: var(--accent-blue); /* Cambia el color de la línea */
+    left: 50%;
+    bottom: -5px; 
+    transform: translateX(-50%);
 }
 
+.heroTitle .backTitle {
+    font-size: 5rem;
+    color: rgba(102, 99, 255, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    z-index: 1;
+}
+.heroTitle .fromTitle {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima del fondo */
+    text-align: center;
+
+}
+
+#swhoiam .whoiam .objective {} 
+
+@media (min-width: 768px) {
+/*:: Seccion de presentacion: Presentacion::*/
+/*Presentacion*/
+    .presentation {
+        padding-block-start: 7%;
+    }
+    
+    .presentation p {
+        color: var(--second-white);
+        font-size: 5.5rem;
+        font-weight: bold;
+        margin-block-end: 5%;
+    }
+    
+    .presentation p:nth-child(2) {
+        font-size: 7rem;
+        color: var(--neutral-white);
+    }
+    .btnCV {
+        font-size: 2.3rem;
+    } 
+}
