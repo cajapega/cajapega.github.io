@@ -58,7 +58,9 @@
 .btnCV {
     font-size: 1.8rem;
 }
-/*:: Seccion de presentacion: whoiam::*/
+
+/*:: Seccion de presentacion: swhoiam::*/
+/*swhoiam*/
 #swhoiam {
     padding-block-start: 10%;
     width: 100%;
@@ -84,7 +86,7 @@
 }
 
 .heroTitle .backTitle {
-    font-size: 5rem;
+    font-size: 4rem;
     color: rgba(102, 99, 255, 0.2);
     position: absolute;
     top: 50%;
@@ -93,7 +95,7 @@
     z-index: 1;
 }
 .heroTitle .fromTitle {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: var(--dark-gray);
     position: relative;
@@ -126,6 +128,17 @@
 } 
 
 #swhoiam .profilePhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#swhoiam .profilePhoto img {
+    width: 70vw;
+    border-radius: 50%;
+    border: 5px solid var(--neutral-black-hover);
+    margin-block: 5%;
 
 }
 
@@ -151,4 +164,6 @@
     .btnCV {
         font-size: 2.3rem;
     } 
+/*:: Seccion de presentacion: swhoiam::*/
+/*swhoiam*/
 }
