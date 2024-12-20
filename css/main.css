@@ -9,12 +9,17 @@
     --dark-gray-hover: #5A5A5A;
 }
 
+/*html, body {
+    overflow-x: hidden; Evita desbordamientos
+}*/
+
 /*:: Seccion de presentacion: Presentacion::*/
 /*Presetacion*/
 #sPresentation {
     background: url('/assets/images/3.png') no-repeat center center/cover;
     position: relative;
-    }
+    width: 100%;
+}
 #sPresentation::before {
     content: "";
     position: absolute;
@@ -28,7 +33,6 @@
 }
 .presentation {
     height: 100vh;
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +48,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-block-end: 5%;
+    text-align: center;
 }
 
 .presentation p:nth-child(2) {
@@ -54,7 +59,10 @@
     font-size: 1.8rem;
 }
 /*:: Seccion de presentacion: whoiam::*/
-#swhoiam {}
+#swhoiam {
+    padding-block-start: 10%;
+    width: 100%;
+}
 
 #swhoiam .whoiam {}
 
@@ -63,7 +71,6 @@
     display: inline-block;
     text-align: center;
     width: 100%;
-
 }
 .heroTitle:after {
     content:'';
@@ -83,7 +90,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     z-index: 1;
 }
 .heroTitle .fromTitle {
@@ -95,8 +101,34 @@
     text-align: center;
 
 }
+.whoiam .objective {
+    padding-block: 10%;
+}
 
-#swhoiam .whoiam .objective {} 
+.whoiam .objective h2 {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.whoiam .objective h2 strong {
+    color: var(--accent-blue);
+    font-weight: bold;
+}
+
+.whoiam .objective p {
+    padding-block: 2%;
+    padding-inline: 10vw;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: var(--dark-gray-hover);
+    line-height: 1.4;
+} 
+
+#swhoiam .profilePhoto {
+
+}
+
 
 @media (min-width: 768px) {
 /*:: Seccion de presentacion: Presentacion::*/

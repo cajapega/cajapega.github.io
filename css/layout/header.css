@@ -3,7 +3,7 @@
 /*Header*/
 #header {
     height: 11vh;
-    width: 100%;
+    width:100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,7 +12,7 @@
     z-index: 30;
 }
 #header .logo {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: var(--dark-gray);
     padding-inline-start: 2vw;
     font-weight: bold;
@@ -85,7 +85,7 @@
     }
     .navLinks li {
         margin-block-start: 0%;
-        margin-inline: 2%;
+        margin-inline: 2vw;
     }
     .navLinks li a {
         font-size: 1.3rem;
