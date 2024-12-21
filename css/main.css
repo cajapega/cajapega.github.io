@@ -320,10 +320,10 @@
 }
 
 
-#sfooter .containerIcon i {
-    font-size: 4rem;
+#sfooter .containerIcon a {
+    font-size: 3rem;
     color: var(--accent-blue);
-    padding-block-end: 20%;
+    padding-block: 5%;
 
 }
 
