@@ -2,7 +2,7 @@ AOS.init();
 
 // Carga de Header
 document.addEventListener("DOMContentLoaded", function() {
-    // Usamos fetch para obtener el contenido del archivo header.html
+    // Fetch para obtener el contenido del archivo header.html
     fetch('../partials/header.html')
         .then(response => response.text())
         .then(data => {
@@ -19,6 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     navLinks.style.display = 'none';
                 }
             }    
+        })
+        .catch(error => console.error('Error al cargar el header:', error));
+});
+
+// Carga el Footer
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch para obtener el contenido del archivo header.html
+    fetch('../partials/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insercion del contenido en el contenedor con el id 'header'
+            document.getElementById('sfooter').innerHTML = data;  
         })
         .catch(error => console.error('Error al cargar el header:', error));
 });
