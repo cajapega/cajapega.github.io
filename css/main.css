@@ -172,13 +172,14 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    row-gap: 7%;
-    padding-block-start: 20%;
+    /*row-gap: 7%; Induce un error por el cual se desborda sskill ya que gap no aumenta el padding interno del contenedor*/ 
+    padding-block-start: 10%;
 }
 #sskills .skills .skill {
     display: flex;
     align-items: center;
     justify-content:space-between;
+    padding-block-start: 15%;
 }
 #sskills .skills .skill .label {
     font-size: 1.5rem;
@@ -287,16 +288,15 @@
 /*skills*/
 #sskills {
     padding-block-start: 5%;
+    height: 100%;
 }
 #sskills .skills {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 15%;
     column-gap: 10%;
-    padding-block-start: 10%;
+    padding-block-start: 5%;
 }
 #sskills .skills .skill {
-
-  
+    padding-block-start: 17%;
 }
 #sskills .skills .skill .label {
     font-size: 1.8rem;
@@ -305,8 +305,9 @@
 #sskills .skills .skill .progressBar .progress {}
 #sskills .skills .skill span {}
 #sskills .skills div:nth-child(7) {
-  grid-column: 1 / -1;  /*Hace que el  7º ítem abarque las dos columnas */
-  justify-self: center; /* Centra el contenido dentro de esa área */
+  grid-column: 1 / -1;  /*Hace que el  7º ítem abarque desde la primera columna a la ultima*/
+  justify-self: center; /*Centra el contenido dentro de esa área*/ 
+  
 }
 
 }
