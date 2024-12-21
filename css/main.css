@@ -208,6 +208,27 @@
     margin-block-start: 5%;
 }
 /* ==================== Sección hooby ==================== */
+#shooby {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 15%;
+    padding-block: 15%;
+    padding-inline: 15%;
+    background-color: #0080FF;
+    color: var(--second-white);
+}
+
+#shooby h3 {
+    margin-block: 10%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#shooby p {
+    font-size: 1.4rem;
+    text-align: center;
+}
 
 /*==================== Seccion stechnologies ==================== */
 
