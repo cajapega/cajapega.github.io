@@ -248,7 +248,6 @@
     display: flex;
     flex-direction: column;
 }
-
 #stechnologies .tech .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -256,7 +255,6 @@
     padding-block-start: 10%;
 
 }
-
 #stechnologies .tech .cards .card {
     margin-block: 5%;
     padding-block: 5%;
@@ -264,29 +262,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 .cards .card .cardImg {
     width: 40vw;
 }
-
-.cards .card .cardBody {
-
-}
-
+.cards .card .cardBody {}
 .cards .card .cardBody h4 {
     padding-block-start: 5%;
     font-size: 1.6rem;
     text-align: center;
 
 }
-
 .cards .card .cardBody p {
     text-align: center;
-    padding-block-start: 5%;
-    
+    padding-block-start: 5%;   
 }
-
 .cards .card .cardBody p .badgeKnowledge {
     display: inline-block; /*Arregla el problema de que se corten los span por las letras que no caben*/
     background-color: #2ECC71;
@@ -298,6 +292,40 @@
 /* ==================== Sección scontact ==================== */
 
 /* ==================== Sección sfooter ==================== */
+#sfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-white);
+    padding-block-start: 15%;
+    padding-block-end: 10%;
+}
+
+#sfooter > p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sfooter .containerIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sfooter .containerIcon p {
+    font-size: 1.2rem;
+    padding-block: 15%;
+}
+
+
+#sfooter .containerIcon i {
+    font-size: 4rem;
+    color: var(--accent-blue);
+    padding-block-end: 20%;
+
+}
 
 
 /* ==================== Media Query ==================== */
