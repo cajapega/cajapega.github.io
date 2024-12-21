@@ -287,7 +287,40 @@
 }
 
 /* ==================== Sección scontact ==================== */
+#scontact {}
+#scontact .rectangle {
+    max-width: 1000px;
+    min-height: 150px;
+    margin-block-end: -20%;
+    margin-inline: 5%;
+    padding-block: 5%;
+    padding-inline: 5%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:ghostwhite;
+    color: var(--dark-gray);
+    text-align: center;
+
+    position: relative; 
+    z-index: 3; /*en relacion a footer*/
+}
+
+#scontact .rectangle > h3 {
+    font-size: 3rem;
+}
+
+#scontact .rectangle > p {
+    font-size: 1.2rem;
+    padding-block: 10%;
+
+}
+
+#scontact .rectangle > button {
+    background-color: var(--dark-gray);
+}
 
 /* ==================== Sección sfooter ==================== */
 #sfooter {
@@ -296,8 +329,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--second-white);
-    padding-block-start: 15%;
+    padding-block-start: 30%;
     padding-block-end: 10%;
+
+    position: relative; 
+    z-index: 2; /*en relacion a rectangle de scontact*/
 }
 
 #sfooter > p {
