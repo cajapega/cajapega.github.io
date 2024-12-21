@@ -245,10 +245,30 @@
 }
 .whoiam .objective h2 strong {}
 .whoiam .objective p {
-    padding-inline: 0;
+    padding-inline: 10%;
 } 
 #swhoiam .profilePhoto {}
 #swhoiam .profilePhoto img {
     width: 25vw;
+}
+/*:: Seccion de presentacion: sexperience::*/
+/*experience*/
+#sexperience {
+    padding-block-start: 7%;
+    padding-inline: 7%;
+}
+#sexperience .experience {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+#sexperience .experience .item{
+}
+.experience .item .icon {
+}
+.experience .item .know {
+    font-size: 1.3rem;
+}
+.experience .item .know h4 {
+    font-size: 2rem; 
 }
 }
