@@ -55,9 +55,6 @@
     font-size: 3.5rem;
     color: var(--neutral-white);
 }
-.presentation .btnContact {
-    font-size: 1.8rem;
-}
 
 /*:: Seccion de presentacion: swhoiam::*/
 /*swhoiam*/
@@ -65,10 +62,7 @@
     padding-block-start: 10%;
     width: auto;
 }
-
-#swhoiam .whoiam {
-}
-
+#swhoiam .whoiam {}
 .heroTitle {
     position: relative;
     display: inline-block;
@@ -147,9 +141,63 @@
 
 }
 
-.btnCV {
-    font-size: 1.8rem;
+/*:: Seccion de presentacion: sexperience::*/
+/*experience*/
+#sexperience {
+    padding-block-start: 10%;
+    padding-inline: 7%;
 }
+#sexperience .experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-block-start: 10%;
+}
+
+#sexperience .experience .item{
+    display: flex;
+    padding-block: 6%;
+}
+.experience .item .icon {
+    font-size: 8rem;
+    color: var(--accent-blue);   
+}
+.experience .item .know {
+    font-size: 1.2rem;
+    padding-inline-start: 6%;
+    text-align: justify;
+}
+.experience .item .know h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    padding-block-end: 5%;
+}
+
+/*Efectos*/
+/*Efecto de agrandamiento*/
+.zoom {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.zoom:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+.zoom:active {
+    transform: scale(1);  /*Restaura tamaño original al hacer clic */
+}
+
+.sombraPronunciada {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.sombraPronunciada:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.sombraPronunciada:active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /*Sombra más pequeña */
+  }
 
 /*::::::::  Media Query  :::::::: */
 @media (min-width: 768px) {
@@ -170,9 +218,7 @@
         font-size: 7rem;
         color: var(--neutral-white);
     }
-    .presentation .btnContact {
-        font-size: 2.5rem;
-    } 
+
 /*:: Seccion de presentacion: swhoiam::*/
 /*swhoiam*/
 #swhoiam {
