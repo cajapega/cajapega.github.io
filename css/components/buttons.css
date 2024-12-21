@@ -1,3 +1,24 @@
+.btnContact {
+  background-color: var(--accent-blue); 
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btnContact:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.btnContact:active {
+  transform: scale(1); /* Restaura tamaño original al hacer clic */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
 .btnCV {
     background-color: var(--accent-blue); 
     color: white;
