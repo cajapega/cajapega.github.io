@@ -2,12 +2,21 @@
 <html>
 
 <head>
-    <!--Viewport-->
+    <!-- ==================== Metadatos ==================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Archivos JS-->
-    <script src="js/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carlos Javier">
+    <meta name="description" content="Portafolio de desarrollo">
+    <meta name="keywords" content="Windows, Linux, Active Directory, Microsoft 365, My SQL, HTML, CSS, Bootstrap, JavaScript, WordPress, cPanel, Git, GitHub, Mikrotik, cableado estructurado, CCTV, ZKTeko, Service Desk, LMS (Moodle), Sistemas de facturación, Mantenimiento Hardware., Mantenimiento Software, Mespaldo de información, Recuperación de información, configuración de equipos y periféricos">
 
-    <!--Estilos Usados-->
+    <!-- ==================== Archivos JS ==================== -->
+    <script src="js/main.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>         <!-- AOS -->
+    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">         <!--Iconos De Boostrap-->
+
+    <!-- ==================== Estilos ==================== -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/base/reset.css">
     <link rel="stylesheet" href="/css/base/typography.css">
@@ -16,35 +25,32 @@
     <link rel="stylesheet" href="/css/layout/footer.css">
     <link rel="stylesheet" href="/css/layout/header.css">
     <link rel="stylesheet" href="/css/utilities/effects.css">
-
-    <!--Iconos De Boostrap-->
-    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
-
-    <!--Efectos AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
 </head>
 
 <body>
-    <!--Seccion de presentacion, navbar y mensaje-->
+    <!-- ==================== Sección Presentación ==================== -->
     <div id="sPresentation" class="transparentOverlay">
+        <!-- header -->
         <header id="header">
         </header>
+        <!-- presentation -->
         <section class="presentation">
             <p>Bienvenido</p>
             <p>Soy <strong>Carlos Javier</strong></p>
+            <!-- Boton Contáctame-->
             <button class="btnGeneric btnContact zoom sombraPronunciada">Contáctame</button>
         </section>
     </div>
     <main>
+        <!-- ==================== Sección swhoiam ==================== -->
         <section id="swhoiam">
             <div class="whoiam">
+                <!-- heroTitle -->
                 <div class="heroTitle">
                     <h3 class="backTitle">Conóceme</h3>
                     <h3 class="fromTitle">Sobre mí</h3>
                 </div>
+                <!-- objective -->
                 <div class="objective">
                     <h2 data-aos="zoom-in-down" data-aos-duration="3000">Soy <strong>Carlos Javier</strong>, <br>Ingeniero en Teleinformática</h2>
                     <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="3000">Estoy comprometido en aportar mis
@@ -56,19 +62,25 @@
                             cambios</strong></p>
                 </div>
             </div>
+            <!-- profilePhoto -->
             <div class="profilePhoto">
                 <img src="assets/images/foto-perfil2.jpg" alt="Foto de Perfil">
+                <!-- Boton CV -->
                 <button class="btnGeneric btnCV zoom sombraPronunciada">Descargar <br> Hoja de Vida</button>
             </div>
         </section>
+        <!-- ==================== Sección sexperience ==================== -->
         <section id="sexperience">
+            <!-- heroTitle -->
             <div class="heroTitle">
                 <h3 class="backTitle">Conocimientos</h3>
                 <h3 class="fromTitle">Experiencia</h3>
             </div>
             <div class="experience">
+                <!-- item -->
                 <div class="item" data-aos="zoom-in-down" data-aos-duration="3000">
                     <div class="icon zoom"><i class="bi bi-cpu"></i></div>
+                    <!-- Soporte Técnico -->
                     <div class="know">
                         <h4>Soporte Técnico</h4>
                         <p>Mantenimiento de equipos de cómputo, resolución de incidencias de hardware y software,
@@ -77,6 +89,7 @@
                 </div>
                 <div class="item" data-aos="zoom-in-down" data-aos-duration="3000">
                     <div class="icon zoom"><i class="bi bi-router-fill"></i></div>
+                    <!-- Administración de Redes -->
                     <div class="know">
                         <h4>Administración de Redes</h4>
                         <p>Configuración de equipos de red, instalación de cableado estructurado, configuración de
@@ -85,6 +98,7 @@
                 </div>
                 <div class="item" data-aos="zoom-in-down" data-aos-duration="3000">
                     <div class="icon zoom"><i class="bi bi-code-slash"></i></div>
+                    <!-- Desarrollo Web -->
                     <div class="know">
                         <h4>Desarrollo Web</h4>
                         <p>Diseño y actualización de sitios web corporativos, integración de CMS como WordPress.</p>
@@ -92,6 +106,7 @@
                 </div>
                 <div class="item" data-aos="zoom-in-down" data-aos-duration="3000">
                     <div class="icon zoom"><i class="bi bi-shield-fill"></i></div>
+                    <!-- Seguridad Informática -->
                     <div class="know">
                         <h4>Seguridad Informática</h4>
                         <p> Instalación y configuración de cámaras de seguridad (CCTV), respaldo y recuperación de
@@ -100,6 +115,7 @@
                 </div>
                 <div class="item" data-aos="zoom-in-down" data-aos-duration="3000">
                     <div class="icon zoom"><i class="bi bi-person-check-fill"></i></div>
+                    <!-- Gestión de Usuarios -->
                     <div class="know">
                         <h4>Gestión de Usuarios</h4>
                         <p> Gestión de cuentas de usuario y correos en plataformas empresariales</p>
@@ -107,6 +123,7 @@
                 </div>
                 <div class="item" data-aos="zoom-in-down" data-aos-duration="3000">
                     <div class="icon zoom"><i class="bi bi-clipboard-data-fill"></i></div>
+                    <!-- Análisis y Mejora de Procesos -->
                     <div class="know">
                         <h4>Análisis y Mejora de Procesos</h4>
                         <p>Automatización de procesos en la mesa de ayuda, implementación de mejoras en servicios TI.
@@ -115,11 +132,14 @@
                 </div>
             </div>
         </section>
+        <!-- ==================== Sección sskills ==================== -->
         <section id="sskills">
+            <!-- heroTitle -->
             <div class="heroTitle">
                 <h3 class="backTitle">Competencias</h3>
                 <h3 class="fromTitle">Skills</h3>
             </div>
+            <!-- skills -->
             <div class="skills" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div class="skill">
                     <p class="label">Resolución de <strong>problemas técnicos</strong></p>
@@ -163,21 +183,26 @@
                     </div>
                     <span>96%</span>
                 </div>
+                <!-- Boton CV -->
                 <div>
                     <button class="btnGeneric btnCV zoom sombraPronunciada">Descargar <br> Hoja de Vida</button>
                 </div>
             </div>
         </section>
-        <section  id="hooby">
+        <!-- ==================== Sección shooby ==================== -->
+        <section  id="shooby">
             <div>
                 <h3>Conoce a Carlos</h3>
                 <p><strong>Me apasiona la tecnología</strong> y dedico gran parte de mi tiempo libre a aprender constantemente cosas nuevas, lo cual me mantiene motivado e informado sobre las últimas tendencias. Al mismo tiempo, considero que una mente sana es fundamental para un cuerpo saludable, por lo que <strong>practico ciclismo y corro</strong>; estas actividades me permiten mantener el equilibrio físico y mental, además de fortalecer mi enfoque en mis objetivos personales y responsabilidades laborales.</p>
             </div>
         </section>
-        <section  id="technologies">
+        <!-- ==================== Sección stechnologies ==================== -->
+        <section  id="stechnologies">
             <div class="tech">
+                <!-- Cards -->
                 <div class="cardTech">
                     <img class="cardImg" src="" alt="Sistemas Operativos">
+                    <!-- Operativos y Administración -->
                     <div class="cardBody">
                         <h4><strong>Operativos y Administración</strong></h4>
                         <p>
@@ -191,6 +216,7 @@
                 </div>
                 <div class="cardTech">
                     <img class="cardImg" src="" alt="Desarrollo y Control de Versiones">
+                    <!-- Desarrollo y Control de Versiones -->
                     <div class="cardBody">
                         <h4><strong>Desarrollo y Control de Versiones</strong></h4>
                         <p>
@@ -207,6 +233,7 @@
                 </div>
                 <div class="cardTech">
                     <img class="cardImg" src="" alt="Redes e Infraestructura">
+                    <!-- Redes e Infraestructura -->
                     <div class="cardBody">
                         <h4><strong>Redes e Infraestructura</strong></h4>
                         <p>
@@ -219,6 +246,7 @@
                 </div>
                 <div class="cardTech">
                     <img class="cardImg" src="" alt="Gestión y Soporte">
+                    <!-- Gestión y Soporte -->
                     <div class="cardBody">
                         <h4><strong>Gestión y Soporte</strong></h4>
                         <p>
@@ -230,6 +258,7 @@
                 </div>
                 <div class="cardTech">
                     <img class="cardImg" src="" alt="Hardware y Mantenimiento">
+                    <!-- Hardware y Mantenimiento -->
                     <div class="cardBody">
                         <h4><strong>Hardware y Mantenimiento</strong></h4>
                         <p>
@@ -244,15 +273,18 @@
                 </div>
             </div>
         </section>
+        <!-- ==================== Sección scontact ==================== -->
         <section id="scontact">
             <div>
                 <div>
                     <h3>¡Hablemos!</h3>
                     <p>Estoy disponible para integrarme al equipo y contribuir a la empresa, trabajando de manera colaborativa para alcanzar los objetivos organizacionales. </p>
-                    <button>Contáctame</button>
+                    <!-- Boton Contáctame -->
+                    <button class="btnGeneric btnContact zoom sombraPronunciada">Contáctame</button>
                 </div>
             </div>
         </section>
+        <!-- ==================== Sección sfooter ==================== -->
         <footer id="sfooter">
         </footer>
     </main>
