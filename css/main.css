@@ -8,6 +8,7 @@
     --second-white: #f5f6f7;
     --dark-gray: #4D4D4D;
     --dark-gray-hover: #5A5A5A;
+    --fresh-breeze: #2ECC71;
 }
 
 /*html, body {
@@ -262,10 +263,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .cards .card .cardImg {
     width: 40vw;
@@ -283,13 +280,14 @@
 }
 .cards .card .cardBody p .badgeKnowledge {
     display: inline-block; /*Arregla el problema de que se corten los span por las letras que no caben*/
-    background-color: #2ECC71;
+    background-color: var(--fresh-breeze);
     color: var(--second-white);
     margin-inline: 1%;
     margin-block: 1%;
 }
 
 /* ==================== Sección scontact ==================== */
+
 
 /* ==================== Sección sfooter ==================== */
 #sfooter {
