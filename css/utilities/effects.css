@@ -1,6 +1,4 @@
-/*Efectos*/
-
-/*Efecto de Transparencia en imagen*/
+/* ==================== Efecto de Transparencia en imagen ==================== */
 .transparentOverlay {
     position: relative;
 }
@@ -17,7 +15,7 @@
     z-index: 0; /* Overlay semitransparente */
 }
 
-/*Efecto de agrandamiento*/
+/* ==================== Sección sfooter ==================== */
 .zoom {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
