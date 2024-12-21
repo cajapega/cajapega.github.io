@@ -1,0 +1,42 @@
+/*Efectos*/
+
+/*Efecto de Transparencia en imagen*/
+.transparentOverlay {
+    position: relative;
+}
+
+.transparentOverlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px) contrast(70%);
+    background: rgba(31, 78, 121, 0.1);  /*rgba(0, 0, 0, 0.4)*/
+    z-index: 0; /* Overlay semitransparente */
+}
+
+/*Efecto de agrandamiento*/
+.zoom {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.zoom:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+.zoom:active {
+    transform: scale(1);  /*Restaura tamaño original al hacer clic */
+}
+
+.sombraPronunciada {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.sombraPronunciada:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.sombraPronunciada:active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /*Sombra más pequeña */
+}

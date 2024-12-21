@@ -17,19 +17,7 @@
 /*Presetacion*/
 #sPresentation {
     background: url('/assets/images/3.png') no-repeat center center/cover;
-    position: relative;
     width: 100%;
-}
-#sPresentation::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(4px) contrast(70%);
-    background: rgba(31, 78, 121, 0.1);  /*rgba(0, 0, 0, 0.4)*/
-    z-index: 0; /* Overlay semitransparente */
 }
 .presentation {
     height: 100vh;
@@ -173,31 +161,61 @@
     color: var(--dark-gray);
     padding-block-end: 5%;
 }
+/*:: Seccion de presentacion: sskills::*/
+/*skills*/
 
-/*Efectos*/
-/*Efecto de agrandamiento*/
-.zoom {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.zoom:hover {
-    transform: scale(1.05); /* Efecto de agrandamiento */
-}
-.zoom:active {
-    transform: scale(1);  /*Restaura tamaño original al hacer clic */
+#sskills {
+    padding-block-start: 10%;
+    padding-inline: 7%;
 }
 
-.sombraPronunciada {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+#sskills .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 7%;
+    padding-block-start: 20%;
+  
 }
 
-.sombraPronunciada:hover {
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+#sskills .skills .skill {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
 }
 
-.sombraPronunciada:active {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /*Sombra más pequeña */
-  }
+#sskills .skills .skill .label {
+    font-size: 1.5rem;
+}
+
+#sskills .skills .skill .progressBar {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    height: 15px;
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#sskills .skills .skill .progressBar .progress {
+    height: 100%;
+    background-color: var(--accent-blue);
+    border-radius: 5px;
+}
+
+#sskills .skills .skill span {
+    font-size: 2rem;
+    margin-left: 10px;
+    font-weight: bold;
+    
+}
+#sskills .skills div:nth-child(7) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 5%;
+}
 
 /*::::::::  Media Query  :::::::: */
 @media (min-width: 768px) {
