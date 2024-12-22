@@ -2,21 +2,25 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-block-start: 10%;
+    padding-block: 10%;
+    gap: 30px;
 
+    align-self: center;
 }
 
 .cards .card {
-    margin-block: 5%;
     padding-block: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    max-width: 420px;
 }
 
 .cards .card .cardImg {
-    width: 40vw;
+    width: auto;
+    height: 120px;
 }
 
 .cards .card .cardBody {}
@@ -44,5 +48,22 @@
 
 /* ==================== Media Query ==================== */
 @media (min-width: 768px) {
-    
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        padding-block-start: 5%;
+        padding-inline: 5%;
+    }
+
+    .cards .card {}
+
+    .cards .card .cardImg {}
+
+    .cards .card .cardBody {}
+
+    .cards .card .cardBody h4 {}
+
+    .cards .card .cardBody p {}
+
+    .cards .card .cardBody p .badgeKnowledge {}
 }
