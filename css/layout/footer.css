@@ -33,9 +33,34 @@
     font-size: 3rem;
     color: var(--accent-blue);
     padding-block: 5%;
-
 }
 
 @media (min-width: 768px) {
-
+    #sfooter {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-block-start: 25%;
+        padding-block-end: 5%;
+    }
+    
+    #sfooter>p {
+        font-size: 1.2rem;
+    }
+    
+    #sfooter .containerIcon {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #sfooter .containerIcon p {
+        font-size: 1.2rem;
+        padding-block: 0%;
+    }
+    
+    #sfooter .containerIcon a {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        padding-block: 0%;
+        padding-inline-start: 5%;
+    }
 }
