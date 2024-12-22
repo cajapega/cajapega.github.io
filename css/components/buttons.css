@@ -6,19 +6,19 @@
 }
 
 .btnContact {
-  background-color: var(--fresh-breeze); 
+  background-color: var(--fresh-breeze);
   color: white;
   font-size: 1.8rem;
- }
+}
 
 .btnCV {
-    background-color: var(--fresh-breeze); 
-    color: white;
-    font-size: 1.8rem;
+  background-color: var(--fresh-breeze);
+  color: white;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
   .btnContact {
     font-size: 2.5rem;
-} 
+  }
 }

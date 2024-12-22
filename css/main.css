@@ -1,6 +1,6 @@
 /* ==================== Root ==================== */
 :root {
-    --primary-blue:  #0000FF;
+    --primary-blue: #0000FF;
     --accent-blue: #0080FF;
     --neutral-black: #0C0C0C;
     --neutral-black-hover: #1A1A1A;
@@ -20,6 +20,7 @@
     background: url('/assets/images/3.png') no-repeat center center/cover;
     width: 100%;
 }
+
 .presentation {
     height: 100vh;
     display: flex;
@@ -44,26 +45,33 @@
     font-size: 3.5rem;
     color: var(--neutral-white);
 }
+
 /* ==================== Sección swhoiam ==================== */
 #swhoiam {
     padding-block: 15%;
     width: auto;
 }
+
 #swhoiam .whoiam {}
+
 .heroTitle {
     position: relative;
     display: inline-block;
     text-align: center;
     width: 100%;
 }
+
 .heroTitle:after {
-    content:'';
+    content: '';
     position: absolute;
-    width: 50%; /* Ajusta el ancho de la línea */
-    height: 6px; /* Ajusta el grosor de la línea */
-    background: var(--accent-blue); /* Cambia el color de la línea */
+    width: 50%;
+    /* Ajusta el ancho de la línea */
+    height: 6px;
+    /* Ajusta el grosor de la línea */
+    background: var(--accent-blue);
+    /* Cambia el color de la línea */
     left: 50%;
-    bottom: -5px; 
+    bottom: -5px;
     transform: translateX(-50%);
 }
 
@@ -76,14 +84,17 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+
 .heroTitle .fromTitle {
     font-size: 3.5rem;
     font-weight: bold;
     color: var(--dark-gray);
     position: relative;
-    z-index: 2; /* Asegura que el texto esté por encima del fondo */
+    z-index: 2;
+    /* Asegura que el texto esté por encima del fondo */
     text-align: center;
 }
+
 .whoiam .objective {
     display: flex;
     flex-direction: column;
@@ -110,7 +121,7 @@
     text-align: justify;
     color: var(--dark-gray-hover);
     line-height: 1.4;
-} 
+}
 
 #swhoiam .profilePhoto {
     display: flex;
@@ -133,15 +144,20 @@
     padding-inline: 7%;
     background-color: #0080FF;
 }
+
 #sexperience .heroTitle:after {
-    background: var(--neutral-black-hover); /* Cambia el color de la línea */
+    background: var(--neutral-black-hover);
+    /* Cambia el color de la línea */
 }
+
 #sexperience .heroTitle .backTitle {
     color: rgb(255, 255, 255, 0.35);
 }
+
 #sexperience .heroTitle .fromTitle {
     color: var(--second-white);
 }
+
 #sexperience .experience {
     display: grid;
     grid-template-columns: 1fr;
@@ -149,20 +165,23 @@
     padding-block-start: 10%;
 }
 
-#sexperience .experience .item{
+#sexperience .experience .item {
     display: flex;
     padding-block: 6%;
 }
+
 .experience .item .icon {
     font-size: 8rem;
-    color: var(--neutral-white);   
+    color: var(--neutral-white);
 }
+
 .experience .item .know {
     color: var(--neutral-white);
     font-size: 1.2rem;
     padding-inline-start: 6%;
     text-align: justify;
 }
+
 .experience .item .know h4 {
     color: var(--neutral-black-hover);
     font-size: 1.6rem;
@@ -175,22 +194,26 @@
     padding-block: 15%;
     padding-inline: 7%;
 }
+
 #sskills .skills {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    /*row-gap: 7%; Induce un error por el cual se desborda sskill ya que gap no aumenta el padding interno del contenedor*/ 
+    /*row-gap: 7%; Induce un error por el cual se desborda sskill ya que gap no aumenta el padding interno del contenedor*/
     padding-block-start: 10%;
 }
+
 #sskills .skills .skill {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-block-start: 15%;
 }
+
 #sskills .skills .skill .label {
     font-size: 1.5rem;
 }
+
 #sskills .skills .skill .progressBar {
     display: flex;
     justify-content: start;
@@ -206,18 +229,21 @@
     background-color: var(--accent-blue);
     border-radius: 5px;
 }
+
 #sskills .skills .skill span {
     font-size: 2rem;
     margin-left: 10px;
     font-weight: bold;
-    
+
 }
+
 #sskills .skills div:nth-child(7) {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-block-start: 5%;
 }
+
 /* ==================== Sección hooby ==================== */
 #shooby {
     width: auto;
@@ -245,10 +271,12 @@
     padding-block: 15%;
     padding-inline: 15%;
 }
+
 #stechnologies .tech {
     display: flex;
     flex-direction: column;
 }
+
 #stechnologies .tech .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -256,6 +284,7 @@
     padding-block-start: 10%;
 
 }
+
 #stechnologies .tech .cards .card {
     margin-block: 5%;
     padding-block: 5%;
@@ -264,22 +293,28 @@
     align-items: center;
     justify-content: center;
 }
+
 .cards .card .cardImg {
     width: 40vw;
 }
+
 .cards .card .cardBody {}
+
 .cards .card .cardBody h4 {
     padding-block-start: 5%;
     font-size: 1.6rem;
     text-align: center;
 
 }
+
 .cards .card .cardBody p {
     text-align: center;
-    padding-block-start: 5%;   
+    padding-block-start: 5%;
 }
+
 .cards .card .cardBody p .badgeKnowledge {
-    display: inline-block; /*Arregla el problema de que se corten los span por las letras que no caben*/
+    display: inline-block;
+    /*Arregla el problema de que se corten los span por las letras que no caben*/
     background-color: var(--fresh-breeze);
     color: var(--second-white);
     margin-inline: 1%;
@@ -288,6 +323,7 @@
 
 /* ==================== Sección scontact ==================== */
 #scontact {}
+
 #scontact .rectangle {
     max-width: 1000px;
     min-height: 150px;
@@ -300,25 +336,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:ghostwhite;
+    background-color: ghostwhite;
     color: var(--dark-gray);
     text-align: center;
 
-    position: relative; 
-    z-index: 3; /*en relacion a footer*/
+    position: relative;
+    z-index: 3;
+    /*en relacion a footer*/
 }
 
-#scontact .rectangle > h3 {
+#scontact .rectangle>h3 {
     font-size: 3rem;
 }
 
-#scontact .rectangle > p {
+#scontact .rectangle>p {
     font-size: 1.2rem;
     padding-block: 10%;
 
 }
 
-#scontact .rectangle > button {
+#scontact .rectangle>button {
     background-color: var(--dark-gray);
 }
 
@@ -332,11 +369,12 @@
     padding-block-start: 30%;
     padding-block-end: 10%;
 
-    position: relative; 
-    z-index: 2; /*en relacion a rectangle de scontact*/
+    position: relative;
+    z-index: 2;
+    /*en relacion a rectangle de scontact*/
 }
 
-#sfooter > p {
+#sfooter>p {
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
@@ -364,96 +402,122 @@
 
 /* ==================== Media Query ==================== */
 @media (min-width: 768px) {
-/* ==================== Sección sPresentation ==================== */
+
+    /* ==================== Sección sPresentation ==================== */
     .presentation {
         padding-block-start: 7%;
     }
-    
+
     .presentation p {
         color: var(--second-white);
         font-size: 5.5rem;
         font-weight: bold;
         margin-block-end: 5%;
     }
-    
+
     .presentation p:nth-child(2) {
         font-size: 7rem;
         color: var(--neutral-white);
     }
 
-/* ==================== Sección swhoiam ==================== */
-#swhoiam {
-    padding-block: 7%;
-    padding-inline: 5%;
-    display: flex;
-    flex-direction: row;
-}
-#swhoiam .whoiam {}
-.heroTitle {}
-.heroTitle:after {}
-.heroTitle .backTitle {
-    font-size: 7.5rem;
-}
-.heroTitle .fromTitle {
-    font-size: 6rem;
-}
-.whoiam .objective {
-    padding-inline: 0;
-    padding-inline-end: 10%;
-}
-.whoiam .objective h2 {
-    font-size: 2.6rem;
-}
-.whoiam .objective h2 strong {}
-.whoiam .objective p {
-    padding-inline: 10%;
-} 
-#swhoiam .profilePhoto {}
-#swhoiam .profilePhoto img {
-    width: 25vw;
-}
-/* ==================== Sección sexperience ==================== */
-#sexperience {
-    padding-block: 7%;
-    padding-inline: 7%;
-}
-#sexperience .experience {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-}
-#sexperience .experience .item{
-}
-.experience .item .icon {
-}
-.experience .item .know {
-    font-size: 1.3rem;
-}
-.experience .item .know h4 {
-    font-size: 2rem; 
-}
-/* ==================== Sección sskills ==================== */
-#sskills {
-    padding-block: 7%;
-    height: 100%;
-}
-#sskills .skills {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10%;
-    padding-block-start: 5%;
-}
-#sskills .skills .skill {
-    padding-block-start: 17%;
-}
-#sskills .skills .skill .label {
-    font-size: 1.8rem;
-}
-#sskills .skills .skill .progressBar {}
-#sskills .skills .skill .progressBar .progress {}
-#sskills .skills .skill span {}
-#sskills .skills div:nth-child(7) {
-  grid-column: 1 / -1;  /*Hace que el  7º ítem abarque desde la primera columna a la ultima*/
-  justify-self: center; /*Centra el contenido dentro de esa área*/ 
-  
-}
+    /* ==================== Sección swhoiam ==================== */
+    #swhoiam {
+        padding-block: 7%;
+        padding-inline: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #swhoiam .whoiam {}
+
+    .heroTitle {}
+
+    .heroTitle:after {}
+
+    .heroTitle .backTitle {
+        font-size: 7.5rem;
+    }
+
+    .heroTitle .fromTitle {
+        font-size: 6rem;
+    }
+
+    .whoiam .objective {
+        padding-inline: 0;
+        padding-inline-end: 10%;
+    }
+
+    .whoiam .objective h2 {
+        font-size: 2.6rem;
+    }
+
+    .whoiam .objective h2 strong {}
+
+    .whoiam .objective p {
+        padding-inline: 10%;
+    }
+
+    #swhoiam .profilePhoto {}
+
+    #swhoiam .profilePhoto img {
+        width: 25vw;
+    }
+
+    /* ==================== Sección sexperience ==================== */
+    #sexperience {
+        padding-block: 7%;
+        padding-inline: 7%;
+    }
+
+    #sexperience .experience {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10%;
+    }
+
+    #sexperience .experience .item {}
+
+    .experience .item .icon {}
+
+    .experience .item .know {
+        font-size: 1.3rem;
+    }
+
+    .experience .item .know h4 {
+        font-size: 2rem;
+    }
+
+    /* ==================== Sección sskills ==================== */
+    #sskills {
+        padding-block: 7%;
+        height: 100%;
+    }
+
+    #sskills .skills {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10%;
+        padding-block-start: 5%;
+    }
+
+    #sskills .skills .skill {
+        padding-block-start: 17%;
+    }
+
+    #sskills .skills .skill .label {
+        font-size: 1.8rem;
+    }
+
+    #sskills .skills .skill .progressBar {}
+
+    #sskills .skills .skill .progressBar .progress {}
+
+    #sskills .skills .skill span {}
+
+    #sskills .skills div:nth-child(7) {
+        grid-column: 1 / -1;
+        /*Hace que el  7º ítem abarque desde la primera columna a la ultima*/
+        justify-self: center;
+        /*Centra el contenido dentro de esa área*/
+
+    }
 
 }
