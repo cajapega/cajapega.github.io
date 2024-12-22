@@ -1,0 +1,48 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-block-start: 10%;
+
+}
+
+.cards .card {
+    margin-block: 5%;
+    padding-block: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card .cardImg {
+    width: 40vw;
+}
+
+.cards .card .cardBody {}
+
+.cards .card .cardBody h4 {
+    padding-block-start: 5%;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+
+.cards .card .cardBody p {
+    text-align: center;
+    padding-block-start: 5%;
+}
+
+.cards .card .cardBody p .badgeKnowledge {
+    display: inline-block;
+    /*Arregla el problema de que se corten los span por las letras que no caben*/
+    background-color: var(--fresh-breeze);
+    color: var(--second-white);
+    margin-inline: 1%;
+    margin-block: 1%;
+}
+
+/* ==================== Media Query ==================== */
+@media (min-width: 768px) {
+    
+}
