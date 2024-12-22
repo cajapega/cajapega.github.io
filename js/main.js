@@ -35,3 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error al cargar el header:', error));
 });
 
+//Redirige a un enlace de whatsapp
+function redirectWa() {
+    window.location.href = "https://wa.me/593978672488"; 
+}
+
+//Redirige a enlace HV
+function downloadHV() {
+    const enlace = document.createElement('a');
+    enlace.href = '/assets/archive/hv.pdf';
+    enlace.download = 'Hoja de Vida.pdf';
+    enlace.click();
+}
