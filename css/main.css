@@ -249,14 +249,15 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    padding-block: 15%;
-    padding-inline: 15%;
-    background-color: #0080FF;
+    min-height: 350px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 10%;
+    background-color: var(--accent-blue);
     color: var(--second-white);
 }
 
 #shooby h3 {
-    margin-block: 10%;
     font-size: 2.3rem;
     font-weight: bold;
 }
@@ -434,5 +435,8 @@
         /*Centra el contenido dentro de esa área*/
 
     }
-
+    /* ==================== Sección hooby ==================== */
+    #shooby {
+        padding-inline: 20%;
+    }
 }
