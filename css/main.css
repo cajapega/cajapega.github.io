@@ -76,7 +76,7 @@
 }
 
 .heroTitle .backTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: rgba(102, 99, 255, 0.2);
     position: absolute;
     top: 50%;
@@ -86,7 +86,7 @@
 }
 
 .heroTitle .fromTitle {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--dark-gray);
     position: relative;
@@ -171,7 +171,7 @@
 }
 
 .experience .item .icon {
-    font-size: 8rem;
+    font-size: 5rem;
     color: var(--neutral-white);
 }
 
@@ -249,7 +249,7 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    min-height: 350px;
+    min-height: 550px;
     align-items: center;
     justify-content: space-evenly;
     padding-inline: 10%;
@@ -436,6 +436,7 @@
     }
     /* ==================== Sección hooby ==================== */
     #shooby {
+        min-height: 400px;
         padding-inline: 20%;
     }
 

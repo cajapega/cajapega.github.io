@@ -10,7 +10,7 @@
 }
 
 #header .logo {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--dark-gray);
     padding-inline-start: 2vw;
     font-weight: bold;
@@ -50,7 +50,7 @@
 
 #header .socialMedia i {
     color: var(--neutral-black);
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-inline: 2vw;
 }
 
