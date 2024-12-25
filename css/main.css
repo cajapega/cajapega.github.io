@@ -9,6 +9,8 @@
     --dark-gray: #4D4D4D;
     --dark-gray-hover: #5A5A5A;
     --fresh-breeze: #2ECC71;
+    h2 {font-size: 2.5rem;};
+    h3 {font-size: 1.5rem;};
 }
 
 /*html, body {
@@ -108,7 +110,6 @@
 }
 
 .whoiam .objective h2 {
-    font-size: 2.2rem;
     line-height: 1.4;
     text-align: center;
 }
@@ -187,7 +188,6 @@
 
 .experience .item .know > h3 {
     color: var(--neutral-black-hover);
-    font-size: 1.6rem;
     font-weight: bold;
     padding-block-end: 5%;
 }
@@ -213,9 +213,7 @@
     padding-block-start: 15%;
 }
 
-#sskills .skills .skill > h3 {
-    font-size: 1.5rem;
-}
+#sskills .skills .skill > h3 {}
 
 #sskills .skills .skill .progressBar {
     display: flex;
@@ -261,7 +259,6 @@
 }
 
 #shooby > h2 {
-    font-size: 2.8rem;
     font-weight: bold;
 }
 
@@ -306,9 +303,7 @@
     /*en relacion a footer*/
 }
 
-#scontact .rectangle>h2 {
-    font-size: 3rem;
-}
+#scontact .rectangle>h2 {}
 
 #scontact .rectangle>p {
     font-size: 1.2rem;
@@ -320,6 +315,9 @@
 
 /* ==================== Media Query ==================== */
 @media (min-width: 768px) {
+    :root {
+        h3 {font-size: 1.8rem;};
+    }
 
     /* ==================== Sección sPresentation ==================== */
     .presentation {
@@ -364,13 +362,11 @@
         padding-inline-end: 10%;
     }
 
-    .whoiam .objective h2 {
-        font-size: 2.6rem;
-    }
+    .whoiam .objective > h2 {}
 
-    .whoiam .objective h2 strong {}
+    .whoiam .objective > h2 > strong {}
 
-    .whoiam .objective p {
+    .whoiam .objective > p {
         padding-inline: 10%;
     }
 
@@ -399,9 +395,7 @@
         font-size: 1.3rem;
     }
 
-    .experience .item .know > h3 {
-        font-size: 2rem;
-    }
+    .experience .item .know > h3 {}
 
     /* ==================== Sección sskills ==================== */
     #sskills {
@@ -419,9 +413,7 @@
         padding-block-start: 17%;
     }
 
-    #sskills .skills .skill > h3 {
-        font-size: 1.8rem;
-    }
+    #sskills .skills .skill > h3 {}
 
     #sskills .skills .skill .progressBar {}
 
