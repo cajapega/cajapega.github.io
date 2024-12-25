@@ -33,7 +33,7 @@
     z-index: 3;
 }
 
-.presentation p {
+.presentation > p {
     color: var(--second-white);
     font-size: 2.5rem;
     font-weight: bold;
@@ -41,9 +41,12 @@
     text-align: center;
 }
 
-.presentation p:nth-child(2) {
+.presentation > h1 {
     font-size: 3.5rem;
     color: var(--neutral-white);
+    font-weight: bold;
+    margin-block-end: 5%;
+    text-align: center;
 }
 
 /* ==================== Sección swhoiam ==================== */
@@ -182,7 +185,7 @@
     text-align: justify;
 }
 
-.experience .item .know h4 {
+.experience .item .know > h3 {
     color: var(--neutral-black-hover);
     font-size: 1.6rem;
     font-weight: bold;
@@ -210,7 +213,7 @@
     padding-block-start: 15%;
 }
 
-#sskills .skills .skill .label {
+#sskills .skills .skill > h3 {
     font-size: 1.5rem;
 }
 
@@ -230,7 +233,7 @@
     border-radius: 5px;
 }
 
-#sskills .skills .skill span {
+#sskills .skills .skill > span {
     font-size: 2rem;
     margin-left: 10px;
     font-weight: bold;
@@ -257,7 +260,7 @@
     color: var(--second-white);
 }
 
-#shooby h3 {
+#shooby > h2 {
     font-size: 2.8rem;
     font-weight: bold;
 }
@@ -303,7 +306,7 @@
     /*en relacion a footer*/
 }
 
-#scontact .rectangle>h3 {
+#scontact .rectangle>h2 {
     font-size: 3rem;
 }
 
@@ -323,14 +326,13 @@
         padding-block-start: 7%;
     }
 
-    .presentation p {
+    .presentation > p {
         color: var(--second-white);
         font-size: 5.5rem;
-        font-weight: bold;
-        margin-block-end: 5%;
+
     }
 
-    .presentation p:nth-child(2) {
+    .presentation > h1 {
         font-size: 7rem;
         color: var(--neutral-white);
     }
@@ -397,7 +399,7 @@
         font-size: 1.3rem;
     }
 
-    .experience .item .know h4 {
+    .experience .item .know > h3 {
         font-size: 2rem;
     }
 
@@ -417,7 +419,7 @@
         padding-block-start: 17%;
     }
 
-    #sskills .skills .skill .label {
+    #sskills .skills .skill > h3 {
         font-size: 1.8rem;
     }
 
@@ -425,7 +427,7 @@
 
     #sskills .skills .skill .progressBar .progress {}
 
-    #sskills .skills .skill span {}
+    #sskills .skills .skill > span {}
 
     #sskills .skills div:nth-child(7) {
         grid-column: 1 / -1;
@@ -456,7 +458,7 @@
     flex-direction: row;
 
 }
-#scontact .rectangle>h3 {}
+#scontact .rectangle>h2 {}
 
 #scontact .rectangle>p {
     font-size: 1.2rem;

@@ -41,14 +41,13 @@
     <!-- ==================== etiquetas Open Graph ==================== -->
     <meta property="og:title" content="Portafolio de Carlos Javier">
     <meta property="og:description" content="Explora mis habilidades y experiencia en tecnología.">
-    <meta property="og:image" content="cajapega.github.io/assets/images/foto-perfil2.jpg">
-    <meta property="og:url" content="cajapega.github.io">
+    <meta property="og:image" content="https://cajapega.github.io/assets/images/foto-perfil2.jpg">
+    <meta property="og:url" content="https://cajapega.github.io/">
 
 
     <!-- ==================== Archivos JS ==================== -->
     <script src="js/main.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
     <link rel="stylesheet" href="assets/icons/bootstrap-icons.css"> <!--Iconos De Boostrap-->
 
     <!-- ==================== Estilos ==================== -->
@@ -76,9 +75,9 @@
         <!-- presentation -->
         <section class="presentation">
             <p>Bienvenido</p>
-            <p>Soy <strong>Carlos Javier</strong></p>
+            <h1>Soy <strong>Carlos Javier</strong></h1>
             <!-- Boton Contáctame-->
-            <button onclick="redirectWa()" class="btnGeneric btnContact zoom sombraPronunciada">Contáctame</button>
+            <button onclick="redirectWa()" class="btnGeneric btnContact zoom sombraPronunciada" aria-label="Contáctame por WhatsApp">Contáctame</button>
         </section>
     </div>
     <main>
@@ -87,8 +86,8 @@
             <div class="whoiam">
                 <!-- heroTitle -->
                 <div class="heroTitle">
-                    <h3 class="backTitle">Conóceme</h3>
-                    <h3 class="fromTitle">Sobre mí</h3>
+                    <h2 class="backTitle">Conóceme</h2>
+                    <h2 class="fromTitle">Sobre mí</h2>
                 </div>
                 <!-- objective -->
                 <div class="objective">
@@ -112,7 +111,7 @@
                 <img src="assets/images/foto-perfil2.jpg"
                     alt="Foto de perfil de Carlos Javier, Ingeniero en Teleinformática">
                 <!-- Boton CV -->
-                <button onclick="downloadHV()" class="btnGeneric btnCV zoom sombraPronunciada">Descargar <br> Hoja de
+                <button onclick="downloadHV()" class="btnGeneric btnCV zoom sombraPronunciada" aria-label="Descarga mi Hoja de Vida">Descargar <br> Hoja de
                     Vida</button>
             </div>
         </section>
@@ -120,8 +119,8 @@
         <section id="sexperience">
             <!-- heroTitle -->
             <div class="heroTitle">
-                <h3 class="backTitle">Experiencia</h3>
-                <h3 class="fromTitle">Experiencia</h3>
+                <h2 class="backTitle">Experiencia</h2>
+                <h2 class="fromTitle">Experiencia</h2>
             </div>
             <div class="experience">
                 <!-- item -->
@@ -129,7 +128,7 @@
                     <div class="icon zoom"><i class="bi bi-cpu"></i></div>
                     <!-- Soporte Técnico -->
                     <div class="know">
-                        <h4>Soporte Técnico</h4>
+                        <h3>Soporte Técnico</h3>
                         <p>Mantenimiento de equipos de cómputo, resolución de incidencias de hardware y software,
                             asistencia al usuario.</p>
                     </div>
@@ -138,7 +137,7 @@
                     <div class="icon zoom"><i class="bi bi-router-fill"></i></div>
                     <!-- Administración de Redes -->
                     <div class="know">
-                        <h4>Administración de Redes</h4>
+                        <h3>Administración de Redes</h3>
                         <p>Configuración de equipos de red, instalación de cableado estructurado, configuración de
                             servidores.</p>
                     </div>
@@ -147,7 +146,7 @@
                     <div class="icon zoom"><i class="bi bi-code-slash"></i></div>
                     <!-- Desarrollo Web -->
                     <div class="know">
-                        <h4>Desarrollo Web</h4>
+                        <h3>Desarrollo Web</h3>
                         <p>Diseño y actualización de sitios web corporativos, integración de CMS como WordPress.</p>
                     </div>
                 </div>
@@ -155,7 +154,7 @@
                     <div class="icon zoom"><i class="bi bi-shield-fill"></i></div>
                     <!-- Seguridad Informática -->
                     <div class="know">
-                        <h4>Seguridad Informática</h4>
+                        <h3>Seguridad Informática</h3>
                         <p> Instalación y configuración de cámaras de seguridad (CCTV), respaldo y recuperación de
                             información.</p>
                     </div>
@@ -164,7 +163,7 @@
                     <div class="icon zoom"><i class="bi bi-person-check-fill"></i></div>
                     <!-- Gestión de Usuarios -->
                     <div class="know">
-                        <h4>Gestión de Usuarios</h4>
+                        <h3>Gestión de Usuarios</h3>
                         <p> Gestión de cuentas de usuario y correos en plataformas empresariales</p>
                     </div>
                 </div>
@@ -172,7 +171,7 @@
                     <div class="icon zoom"><i class="bi bi-clipboard-data-fill"></i></div>
                     <!-- Análisis y Mejora de Procesos -->
                     <div class="know">
-                        <h4>Análisis y Mejora de Procesos</h4>
+                        <h3>Análisis y Mejora de Procesos</h3>
                         <p>Automatización de procesos en la mesa de ayuda, implementación de mejoras en servicios TI.
                         </p>
                     </div>
@@ -183,48 +182,48 @@
         <section id="sskills">
             <!-- heroTitle -->
             <div class="heroTitle">
-                <h3 class="backTitle">Skills</h3>
-                <h3 class="fromTitle">Skills</h3>
+                <h2 class="backTitle">Skills</h2>
+                <h2 class="fromTitle">Skills</h2>
             </div>
             <!-- skills -->
             <div class="skills" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div class="skill">
-                    <p class="label">Resolución de <strong>problemas técnicos</strong></p>
+                    <h3 class="label">Resolución de <strong>problemas técnicos</strong></h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 95%;"></div>
                     </div>
                     <span>95%</span>
                 </div>
                 <div class="skill">
-                    <p class="label">Configuración de <strong>infraestructura</strong></p>
+                    <h3 class="label">Configuración de <strong>infraestructura</strong></h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 96%;"></div>
                     </div>
                     <span>96%</span>
                 </div>
                 <div class="skill">
-                    <p class="label">Desarrollo <strong>Front-end</strong></p>
+                    <h3 class="label">Desarrollo <strong>Front-end</strong></h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 90%;"></div>
                     </div>
                     <span>90%</span>
                 </div>
                 <div class="skill">
-                    <p class="label"><strong>Seguridad y respaldo</strong></p>
+                    <h3 class="label"><strong>Seguridad y respaldo</strong></h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 97%;"></div>
                     </div>
                     <span>97%</span>
                 </div>
                 <div class="skill">
-                    <p class="label"><strong>Optimización de procesos</strong></p>
+                    <h3 class="label"><strong>Optimización de procesos</strong></h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 95%;"></div>
                     </div>
                     <span>95%</span>
                 </div>
                 <div class="skill">
-                    <p class="label"><strong>Gestión de usuarios y recursos</strong></p>
+                    <h3 class="label"><strong>Gestión de usuarios y recursos</strong></h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 96%;"></div>
                     </div>
@@ -232,14 +231,14 @@
                 </div>
                 <!-- Boton CV -->
                 <div>
-                    <button onclick="downloadHV()" class="btnGeneric btnCV zoom sombraPronunciada">Descargar <br> Hoja
+                    <button onclick="downloadHV()" class="btnGeneric btnCV zoom sombraPronunciada" aria-label="Descarga mi Hoja de Vida">Descargar <br> Hoja
                         de Vida</button>
                 </div>
             </div>
         </section>
         <!-- ==================== Sección shooby ==================== -->
         <section id="shooby">
-            <h3>Conoceme</h3>
+            <h2>Conoceme</h2>
             <p><strong>Me apasiona la tecnología</strong> y dedico gran parte de mi tiempo libre a aprender
                 constantemente cosas nuevas, lo cual me mantiene motivado e informado sobre las últimas tendencias.
                 <strong><br><br> Practico ciclismo y corro</strong>; estas actividades me permiten mantener el
@@ -251,8 +250,8 @@
         <section id="stechnologies">
             <div class="tech">
                 <div class="heroTitle">
-                    <h3 class="backTitle">Tecnologías</h3>
-                    <h3 class="fromTitle">Tecnologías</h3>
+                    <h2 class="backTitle">Tecnologías</h2>
+                    <h2 class="fromTitle">Tecnologías</h2>
                 </div>
                 <!-- Cards -->
                 <div class="cards">
@@ -260,7 +259,7 @@
                         <img class="cardImg" src="assets/images/os.png" alt="Imagen de Disco de Instalación de S.O.">
                         <!-- Operativos y Administración -->
                         <div class="cardBody">
-                            <h4><strong>Operativos y Administración</strong></h4>
+                            <h3><strong>Operativos y Administración</strong></h3>
                             <p>
                                 <span class="badgeKnowledge btnGeneric zoom">Windows</span>
                                 <span class="badgeKnowledge btnGeneric zoom">Linux</span>
@@ -274,7 +273,7 @@
                         <img class="cardImg" src="assets/images/dcv.png" alt="Imagen de Desarrollo HTML">
                         <!-- Desarrollo y Control de Versiones -->
                         <div class="cardBody">
-                            <h4><strong>Desarrollo y Control de Versiones</strong></h4>
+                            <h3><strong>Desarrollo y Control de Versiones</strong></h3>
                             <p>
                                 <span class="badgeKnowledge btnGeneric zoom">HTML</span>
                                 <span class="badgeKnowledge btnGeneric zoom">CSS</span>
@@ -292,7 +291,7 @@
                             alt="Imagen de un conector rj45 en el estandar TIA/EIA 568B">
                         <!-- Redes e Infraestructura -->
                         <div class="cardBody">
-                            <h4><strong>Redes e Infraestructura</strong></h4>
+                            <h3><strong>Redes e Infraestructura</strong></h3>
                             <p>
                                 <span class="badgeKnowledge btnGeneric zoom">Mikrotik</span>
                                 <span class="badgeKnowledge btnGeneric zoom">Cableado estructurado</span>
@@ -305,7 +304,7 @@
                         <img class="cardImg" src="assets/images/gs.png" alt="Imagen de Gestión y Soporte">
                         <!-- Gestión y Soporte -->
                         <div class="cardBody">
-                            <h4><strong>Gestión y Soporte</strong></h4>
+                            <h3><strong>Gestión y Soporte</strong></h3>
                             <p>
                                 <span class="badgeKnowledge btnGeneric zoom">Service Desk</span>
                                 <span class="badgeKnowledge btnGeneric zoom">LMS (Moodle)</span>
@@ -317,7 +316,7 @@
                         <img class="cardImg" src="assets/images/hm.png" alt="Imagen de Hardware y Mantenimiento">
                         <!-- Hardware y Mantenimiento -->
                         <div class="cardBody">
-                            <h4><strong>Mantenimiento</strong></h4>
+                            <h3><strong>Mantenimiento</strong></h3>
                             <p>
                                 <span class="badgeKnowledge btnGeneric zoom">Hardware.</span>
                                 <span class="badgeKnowledge btnGeneric zoom">Software</span>
@@ -335,16 +334,16 @@
         <!-- ==================== Sección scontact ==================== -->
         <section id="scontact">
             <div class="rectangle modernLightShadow">
-                <h3>¡Hablemos!</h3>
+                <h2>¡Hablemos!</h2>
                 <p>Estoy disponible para integrarme al equipo y contribuir a la empresa, trabajando de manera
                     colaborativa para alcanzar los objetivos organizacionales. </p>
-                <button onclick="redirectWa()" class="btnGeneric btnContact zoom sombraPronunciada">Contáctame</button>
+                <button onclick="redirectWa()" class="btnGeneric btnContact zoom sombraPronunciada" aria-label="Contáctame por WhatsApp">Contáctame</button>
             </div>
         </section>
         <!-- ==================== Sección sfooter ==================== -->
         <footer id="sfooter">
         </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
 </body>
-
 </html>

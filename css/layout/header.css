@@ -7,6 +7,7 @@
     background-color: var(--second-white);
     position: fixed;
     z-index: 30;
+    box-shadow: 0 15px 15px rgba(0,0,0, 0.1); /*Sombra de caja inferior*/
 }
 
 #header .logo {
@@ -73,7 +74,9 @@
 
     /*:: Seccion de presentacion: Header::*/
     /*Header*/
-    #header {}
+    #header {
+        box-shadow: 0 9px 10px rgba(0,0,0, 0.1);
+    }
 
     #header nav {
         width: 40%;
