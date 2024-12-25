@@ -59,6 +59,50 @@
     <link rel="stylesheet" href="/css/layout/footer.css">
     <link rel="stylesheet" href="/css/layout/header.css">
     <link rel="stylesheet" href="/css/utilities/effects.css">
+
+    <!-- ==================== SCHEMA ==================== -->
+    <!-- Esquema JSON-LD
+    Person: Para resaltar información sobre ti como individuo. 
+    WebSite: Para describir el sitio web en general.
+    ProfessionalService: Si tu sitio está enfocado en ofrecer servicios. 
+    -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person", 
+          "name": "Carlos Javier",
+          "url": "https://cajapega.github.io/",
+          "image": "https://cajapega.github.io/assets/images/foto-hv.webp",
+          "jobTitle": "Ingeniero en Teleinformática",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Empresa que desee contratarme"
+          },
+          "sameAs": [
+            "https://github.com/cajapega"
+          ],
+          "description": "Ingeniero en Teleinformática comprometido en optimizar procesos tecnológicos con experiencia en soporte técnico, desarrollo web y administración de redes.",
+          "email": "correo@ejemplo.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "",
+            "addressRegion": "Guayas",
+            "addressCountry": "Ecuador"
+          },
+          "knowsAbout": [
+            "Soporte Técnico",
+            "Administración de Redes",
+            "Desarrollo Web",
+            "Seguridad Informática",
+            "Gestión de Usuarios",
+            "Análisis y Mejora de Procesos"
+          ],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad de Guayaquil"
+          }
+        }
+        </script>
 </head>
 
 <body>
