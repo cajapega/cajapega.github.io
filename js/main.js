@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Redirige a un enlace de whatsapp
 function redirectWa() {
-    window.location.href = "https://wa.me/593978672488"; 
+    window.location.href = "https://wa.me/593978672488";
 }
 
 //Redirige a enlace HV

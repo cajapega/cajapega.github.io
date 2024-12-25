@@ -9,8 +9,18 @@
     --dark-gray: #4D4D4D;
     --dark-gray-hover: #5A5A5A;
     --fresh-breeze: #2ECC71;
-    h2 {font-size: 2.5rem;};
-    h3 {font-size: 1.5rem;};
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    ;
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    ;
 }
 
 /*html, body {
@@ -19,7 +29,7 @@
 
 /* ==================== Sección sPresentation ==================== */
 #sPresentation {
-    background: url('/assets/images/3.png') no-repeat center center/cover;
+    background: url('/assets/images/rack.webp') no-repeat center center/cover;
     width: 100%;
 }
 
@@ -35,7 +45,7 @@
     z-index: 3;
 }
 
-.presentation > p {
+.presentation>p {
     color: var(--second-white);
     font-size: 2.5rem;
     font-weight: bold;
@@ -43,7 +53,7 @@
     text-align: center;
 }
 
-.presentation > h1 {
+.presentation>h1 {
     font-size: 3.5rem;
     color: var(--neutral-white);
     font-weight: bold;
@@ -186,7 +196,7 @@
     text-align: justify;
 }
 
-.experience .item .know > h3 {
+.experience .item .know>h3 {
     color: var(--neutral-black-hover);
     font-weight: bold;
     padding-block-end: 5%;
@@ -213,7 +223,7 @@
     padding-block-start: 15%;
 }
 
-#sskills .skills .skill > h3 {}
+#sskills .skills .skill>h3 {}
 
 #sskills .skills .skill .progressBar {
     display: flex;
@@ -231,7 +241,7 @@
     border-radius: 5px;
 }
 
-#sskills .skills .skill > span {
+#sskills .skills .skill>span {
     font-size: 2rem;
     margin-left: 10px;
     font-weight: bold;
@@ -258,7 +268,7 @@
     color: var(--second-white);
 }
 
-#shooby > h2 {
+#shooby>h2 {
     font-weight: bold;
 }
 
@@ -316,7 +326,11 @@
 /* ==================== Media Query ==================== */
 @media (min-width: 768px) {
     :root {
-        h3 {font-size: 1.8rem;};
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        ;
     }
 
     /* ==================== Sección sPresentation ==================== */
@@ -324,13 +338,13 @@
         padding-block-start: 7%;
     }
 
-    .presentation > p {
+    .presentation>p {
         color: var(--second-white);
         font-size: 5.5rem;
 
     }
 
-    .presentation > h1 {
+    .presentation>h1 {
         font-size: 7rem;
         color: var(--neutral-white);
     }
@@ -362,11 +376,11 @@
         padding-inline-end: 10%;
     }
 
-    .whoiam .objective > h2 {}
+    .whoiam .objective>h2 {}
 
-    .whoiam .objective > h2 > strong {}
+    .whoiam .objective>h2>strong {}
 
-    .whoiam .objective > p {
+    .whoiam .objective>p {
         padding-inline: 10%;
     }
 
@@ -395,7 +409,7 @@
         font-size: 1.3rem;
     }
 
-    .experience .item .know > h3 {}
+    .experience .item .know>h3 {}
 
     /* ==================== Sección sskills ==================== */
     #sskills {
@@ -413,13 +427,13 @@
         padding-block-start: 17%;
     }
 
-    #sskills .skills .skill > h3 {}
+    #sskills .skills .skill>h3 {}
 
     #sskills .skills .skill .progressBar {}
 
     #sskills .skills .skill .progressBar .progress {}
 
-    #sskills .skills .skill > span {}
+    #sskills .skills .skill>span {}
 
     #sskills .skills div:nth-child(7) {
         grid-column: 1 / -1;
@@ -428,6 +442,7 @@
         /*Centra el contenido dentro de esa área*/
 
     }
+
     /* ==================== Sección hooby ==================== */
     #shooby {
         min-height: 400px;
@@ -435,28 +450,30 @@
     }
 
     /*==================== Seccion stechnologies ==================== */
-#stechnologies {
-    padding-block: 7%;
-}
+    #stechnologies {
+        padding-block: 7%;
+    }
 
-#stechnologies .tech {}
+    #stechnologies .tech {}
 
     /* ==================== Sección scontact ==================== */
-#scontact {}
+    #scontact {}
 
-#scontact .rectangle {
-    min-height: 250px;
-    margin-block-end: -10%;
-    flex-direction: row;
+    #scontact .rectangle {
+        min-height: 250px;
+        margin-block-end: -10%;
+        flex-direction: row;
 
-}
-#scontact .rectangle>h2 {}
+    }
 
-#scontact .rectangle>p {
-    font-size: 1.2rem;
-    padding-inline: 5%;
+    #scontact .rectangle>h2 {}
 
-}
-#scontact .rectangle>button {}
+    #scontact .rectangle>p {
+        font-size: 1.2rem;
+        padding-inline: 5%;
+
+    }
+
+    #scontact .rectangle>button {}
 
 }
